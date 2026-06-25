@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 // a number is called a armstrong number if the sum of the power of its digits is equal to the number
 using namespace std;
-int number_of_digits(int n){
+int factorial(int n){
     int  c=0;
 while(n>0){
     n/=10;
