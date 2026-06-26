@@ -5,15 +5,15 @@ if(curr.length()==n){
 ans.push_back(curr);
 return;
 }
-if(curr.empty() || curr.empty()!='1'){
-curr.push_back('')
-}
+if(curr.empty() || curr.back()!='1'){
 curr.push_back('1');
 solve(ans,curr,n);
 curr.pop_back();
+}
 if(curr.empty() || curr.back()!='0'){
 curr.push_back('0');
 solve(ans,curr,n);
+curr.pop_back();
 }
 }
 vector<string>generateStrings(int n){
