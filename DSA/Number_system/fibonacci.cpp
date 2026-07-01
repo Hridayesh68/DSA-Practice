@@ -2,7 +2,8 @@
 using namespace std;
 void fib(int n){
 if(n==0 || n==1)cout<<n;
-int a=0,b=1;
+int a=5,b=6;
+cout<<5<<" "<<6<<" ";
 for(int i=2; i<=n; i++){
 int c=a+b;
 cout<<c<<" ";
